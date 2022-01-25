@@ -4,6 +4,6 @@
 
     public interface IApplicationProcessStrategy
     {
-        void BuildEmailContent(Application application);
+        void BuildEmailBody(Application application);
     }
 }
