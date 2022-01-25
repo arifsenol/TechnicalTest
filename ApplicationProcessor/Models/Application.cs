@@ -1,24 +1,26 @@
-﻿using System;
-using System.Text;
-using ULaw.ApplicationProcessor.Enums;  
-
-namespace ULaw.ApplicationProcessor
+﻿namespace ULaw.ApplicationProcessor.Models
 {
+    using System;
+    using System.Text;
+    using ULaw.ApplicationProcessor.Enums;
+
     public class Application
     {
-        public Application(string faculty, string CourseCode, DateTime Startdate, string Title, string FirstName, string LastName, DateTime DateOfBirth, bool requiresVisa)
+        public Application(string faculty, string courseCode, DateTime startDate, string title, string firstName, string lastName, DateTime dateOfBirth, bool requiresVisa)
         {
-            this.ApplicationId = new Guid();
-            this.Faculty = faculty;
-            this.CourseCode = CourseCode;
-            this.StartDate = Startdate;
-            this.Title = Title;
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.RequiresVisa = RequiresVisa;
-            this.DateOfBirth = DateOfBirth;
+            ApplicationId = new Guid();
+            Faculty = faculty;
+            CourseCode = courseCode;
+            StartDate = startDate;
+            Title = title;
+            FirstName = firstName;
+            LastName = lastName;
+            DateOfBirth = dateOfBirth;
+            RequiresVisa = requiresVisa;
         }
 
+        #region Public Properties
+        
         public Guid ApplicationId { get; private set; }
         public string Faculty { get; private set; }
         public string CourseCode { get; private set; }
@@ -31,6 +33,8 @@ namespace ULaw.ApplicationProcessor
 
         public DegreeGradeEnum DegreeGrade { get; set; }
         public DegreeSubjectEnum DegreeSubject { get; set; }
+
+        #endregion
 
         public string Process()
         {

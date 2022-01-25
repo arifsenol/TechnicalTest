@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
-using System.Reflection; 
-
-namespace ULaw.ApplicationProcessor.Enums
+﻿namespace ULaw.ApplicationProcessor.Enums
 {
+    using System.ComponentModel;
+
     public enum DegreeGradeEnum : int
     {
         [DescriptionAttribute("1st")]

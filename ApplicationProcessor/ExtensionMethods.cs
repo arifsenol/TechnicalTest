@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
-using System.Reflection;
-
-namespace ULaw.ApplicationProcessor
+﻿namespace ULaw.ApplicationProcessor
 {
+    using System;
+    using System.ComponentModel;
+    using System.Reflection;
+
+    // I would rename this class name like EnumExtensions and move it to a folder like Extensions
     static class ExtensionMethods
     {
         public static string ToDescription(this Enum en)

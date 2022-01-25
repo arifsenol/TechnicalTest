@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ULaw.ApplicationProcessor;
-using ULaw.ApplicationProcessor.Enums;
-
-namespace ULaw.ApplicationProcessor.Tests
+﻿namespace ULaw.ApplicationProcessor.Tests
 {
+    using System;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using ULaw.ApplicationProcessor.Models;
+    using ULaw.ApplicationProcessor.Enums;
 
     [TestClass]
     public class ApplicationSubmissionTests
