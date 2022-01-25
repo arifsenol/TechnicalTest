@@ -34,7 +34,8 @@
         public DegreeGradeEnum DegreeGrade { get; set; }
         public DegreeSubjectEnum DegreeSubject { get; set; }
 
-        #endregion       
+        #endregion           
+
     }
 }
 
