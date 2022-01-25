@@ -80,7 +80,7 @@
             thisSubmission.DegreeGrade = DegreeGradeEnum.twoOne;
             thisSubmission.DegreeSubject = DegreeSubjectEnum.maths;
 
-            string emailHtml = thisSubmission.Process();
+            string emailHtml = applicationService.Process(thisSubmission);
             Assert.AreEqual(emailHtml, FurtherInfoEmailResult);
         }
 
@@ -116,7 +116,7 @@
             thisSubmission.DegreeGrade = DegreeGradeEnum.twoTwo;
             thisSubmission.DegreeSubject = DegreeSubjectEnum.law;
 
-            string emailHtml = thisSubmission.Process();
+            string emailHtml = applicationService.Process(thisSubmission);
             Assert.AreEqual(emailHtml, FurtherInfoEmailResult);
         }
 
